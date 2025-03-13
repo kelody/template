@@ -81,3 +81,16 @@ cargo nextest 是一个 Rust 增强测试工具。
 ```bash
 cargo install cargo-nextest --locked
 ```
+### 安装 cargo-audit 
+增强Rust应用程序安全性的工具，它允许开发者在编译的可执行文件中嵌入依赖树的详细信息。
+这个特性对于生产环境尤其重要，因为它使得能够大规模地审计二进制文件是否存在已知的安全漏洞或缺陷，而无需额外的记录工作‌
+```bash
+cargo install cargo-audit
+cargo audit bin target/release/your-project
+```
+###安装 cargo-auditable 
+安全增强工具
+```bash
+cargo install cargo-auditable
+cargo auditable build --release
+```
